@@ -14,9 +14,9 @@ header {
 }
 
 .grid {
-    
+    display: flex;
     border-radius: 25px;
-    
+    justify-content: center;
 }
 
 footer {
