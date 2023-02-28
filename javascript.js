@@ -1,12 +1,18 @@
+
 const container = document.querySelector("#container")
 
-
-
-
-for (let i = 1; i < 257; i++) {
-        const div = document.createElement("div")
-        container.appendChild(div)
+function makeDivs (numDivs) {
+        for (let c = 0; c < (numDivs * numDivs); c++) {
+        let cells = document.createElement ("div")
+        container.appendChild(cells)
+        
     }
+
+}
+
+makeDivs (16)
+
+
 
 
 
