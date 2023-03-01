@@ -8,25 +8,21 @@ container.appendChild(grid)
 function makeDivs (row, col) {
     grid.style.setProperty ('--grid-col', col)
     grid.style.setProperty ('--grid-row', row)
-        for (let c = 0; c < (col * row); c++) {
+    
+        for (c = 0; c < (col * row); c++) {
         let cell = document.createElement ("div")
-        grid.appendChild(cell)
-
-       
-        
-        
+        cell.classList.add ("cell")
+        grid.appendChild(cell) 
+        cell.addEventListener("mousemove", () => {
+            cell.classList.add ("sketching")
+        })
     }
-
+   
 }
 
 makeDivs (16, 16)
 
-
-
-
-
-
-
+// The cell needs to change color when hover and stay that color.
 
 
 
