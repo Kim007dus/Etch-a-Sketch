@@ -2,6 +2,8 @@ const container = document.querySelector("#container")
 const grid = document.createElement("div")
 grid.classList.add("grid")
 container.appendChild(grid)
+const buttonStart = document.querySelector("#start")
+const buttonClean = document.querySelector("#clean")
 
 
 function makeDivs(number) {
@@ -13,6 +15,10 @@ function makeDivs(number) {
         grid.appendChild(cell)
         cell.addEventListener("mousemove", () => {
             cell.classList.add("sketching")
+            buttonClean.addEventListener ("click", () => {
+                cell.classList.remove ("sketching")
+
+            })
         })
     }
 
@@ -20,7 +26,7 @@ function makeDivs(number) {
 
 makeDivs(16)
 
-const buttonStart = document.querySelector("#start")
+
 
 buttonStart.addEventListener("click", () => {
     let row = prompt("Choose the size of the sketch please! (max 100)")
@@ -30,6 +36,4 @@ buttonStart.addEventListener("click", () => {
     }
 
 })
-
-
 // The cell needs to change color when hover and stay that color.

@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
@@ -14,10 +15,12 @@ header {
     display: flex;
     justify-content: space-around;
     background-color: red;
+    padding-top: 25px;
 }
 
 .button {
-    padding: 20px;
+    border-radius: 25px;
+    font-size: medium;    
 }
 
 
