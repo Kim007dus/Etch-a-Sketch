@@ -55,6 +55,13 @@ header {
     background-color: black;
 }
 
+.grid>.sketchingrainbow {
+    transform: scale (1.0);
+    background-color: red;
+}
+
+
+
 footer {
     text-align: center;
     font-size: small;
